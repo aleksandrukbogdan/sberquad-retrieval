@@ -1,0 +1,15 @@
+{
+  "archive_url": "https://files.deeppavlov.ai/datasets/sber_squad-v1.1.tar.gz",
+  "archive_sha256": "f407957da59fd998385df97c73cb82306bf91ece1998da6381df5144f20db128",
+  "files": {
+    "train-v1.1.json": {
+      "sha256": "b603790dcc70a76334a75aaf1406907ca40a2a160de1636ae72387421d90e32c",
+      "bytes": 75019258
+    },
+    "dev-v1.1.json": {
+      "sha256": "1a093fbe493f71b8ac246dd8f2794b81be4cf2c66de2002614af385badb61a7d",
+      "bytes": 9482913
+    }
+  },
+  "note": "Загрузчик HF (sc.link) отдал 204 без тела. Файл тот, на который ссылается DeepPavlov: sber_squad-v1.1.tar.gz."
+}

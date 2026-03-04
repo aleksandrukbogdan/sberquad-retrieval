@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache__/
+*.pyc
+.venv/
+data/raw/
+data/cache/*.npy
+data/cache/*.meta.json
