@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "tune_questions": 200,
+  "eval_questions": 500,
+  "train_distractors": 1000,
+  "frozen": true,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "rrf": {
+    "k": 10,
+    "depth": 50
+  },
+  "rerank": {
+    "depth": 20
+  },
+  "store_topk": 10,
+  "retrieve_topk": 100,
+  "dense": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "batch_size": 32,
+    "max_length": 512,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: "
+  },
+  "reranker_ce": {
+    "model": "DiTy/cross-encoder-russian-msmarco",
+    "revision": "9029bab08103ad171724b510d312befa5b476293",
+    "batch_size": 16,
+    "max_length": 512,
+    "logit_sign": 1
+  },
+  "hyde": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "max_new_tokens": 128
+  },
+  "chunk": {
+    "overlap": 80,
+    "sizes": [
+      200,
+      400,
+      800
+    ]
+  }
+}
