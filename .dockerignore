@@ -1,0 +1,6 @@
+data/raw/
+data/cache/*.npy
+data/cache/*.meta.json
+__pycache__/
+.pytest_cache__/
+.venv/

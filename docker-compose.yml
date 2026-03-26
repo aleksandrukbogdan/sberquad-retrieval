@@ -1,0 +1,13 @@
+services:
+  eval:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+      - ./data:/app/data
+      - hfcache:/cache/huggingface
+    environment:
+      HF_HOME: /cache/huggingface
+    command: python -m lab.eval --split dev
+
+volumes:
+  hfcache:
