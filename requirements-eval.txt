@@ -1,0 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu
+transformers==4.55.0
+rank-bm25==0.2.2
+pymorphy3==2.0.4
+pymorphy3-dicts-ru==2.4.417150.4580142
